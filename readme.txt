@@ -10,6 +10,8 @@ License URI: http://opensource.org/licenses/MIT
 
 Create and add rich content to your website for free. Some examples of what you get with H5P are Interactive Video, Quizzes, Collage and Timeline.
 
+Contains UPDATED version of jQuery (3.6.0).
+
 == Packaging ==
 
 Requires installed 7-Zip.
