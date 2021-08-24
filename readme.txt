@@ -1,14 +1,24 @@
 ﻿=== Interactive Content – H5P ===
-Contributors: icc0rz, fnoks, falcon28
+Contributors: icc0rz, fnoks, falcon28, sr258
 Donate link: http://h5p.org
 Tags: editor, video, quiz, slider, education
 Requires at least: 3.8.1
 Tested up to: 5.7.2
-Stable tag: 1.15.3
+Stable tag: 1.15.3.1
 License: MIT
 License URI: http://opensource.org/licenses/MIT
 
 Create and add rich content to your website for free. Some examples of what you get with H5P are Interactive Video, Quizzes, Collage and Timeline.
+
+== Packaging ==
+
+Requires installed 7-Zip.
+
+* Clone in h5p directory
+* Navigate to the parent directory (not h5p, but parent of it) in the CLI.
+* Enter 7z a -xr@h5p/package-exclude-list.txt h5p.zip h5p
+
+The resulting h5p.zip file can be uploaded to WordPress.
 
 == Description ==
 
