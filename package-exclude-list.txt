@@ -1,0 +1,10 @@
+.dccache
+.git
+.gitignore
+.gitmodules
+.travis.yml
+*.scss
+composer.json
+config.rb
+spec_en.html
+package-exclude-list.txt
