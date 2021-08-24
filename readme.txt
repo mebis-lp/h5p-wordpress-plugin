@@ -15,8 +15,10 @@ Create and add rich content to your website for free. Some examples of what you 
 Requires installed 7-Zip.
 
 * Clone in h5p directory
+* Check out the correct branch!
+* Fetch Git submodules: `$ git submodule update --init --recursive` 
 * Navigate to the parent directory (not h5p, but parent of it) in the CLI.
-* Enter 7z a -xr@h5p/package-exclude-list.txt h5p.zip h5p
+* Enter `7z a -xr@h5p/package-exclude-list.txt h5p.zip h5p`
 
 The resulting h5p.zip file can be uploaded to WordPress.
 
