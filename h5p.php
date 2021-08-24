@@ -14,9 +14,9 @@
  * @wordpress-plugin
  * Plugin Name:       H5P
  * Plugin URI:        http://h5p.org/wordpress
- * Description:       Allows you to upload, create, share and use rich interactive content on your WordPress site.
- * Version:           1.15.3
- * Author:            Joubel
+ * Description:       Patched H5P version 1.15.3 that updates jQuery to 3.6.0. Replace with the original one once they've updated it!
+ * Version:           1.15.3.1
+ * Author:            Joubel, S. Rettig
  * Author URI:        http://joubel.com
  * Text Domain:       h5p
  * License:           MIT

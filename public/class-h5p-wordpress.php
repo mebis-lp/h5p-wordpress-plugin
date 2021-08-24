@@ -915,7 +915,7 @@ class H5PWordPress implements H5PFrameworkInterface {
   /**
    * Implements fetchExternalData
    */
-  public function fetchExternalData($url, $data = NULL, $blocking = TRUE, $stream = NULL) {
+  public function fetchExternalData($url, $data = NULL, $blocking = TRUE, $stream = NULL, $fullData = FALSE, $headers = array(), $files = array(), $method = 'POST') {
     @set_time_limit(0);
     $options = array(
       'timeout' => !empty($blocking) ? 30 : 0.01,
@@ -1280,5 +1280,50 @@ class H5PWordPress implements H5PFrameworkInterface {
         $library['majorVersion'],
         $library['minorVersion']
     )) !== NULL;
+  }
+
+  /**
+   * Replace content hub metadata cache
+   *
+   * @param JsonSerializable $metadata Metadata as received from content hub
+   * @param string $lang Language in ISO 639-1
+   *
+   * @return mixed
+   */
+  public function replaceContentHubMetadataCache($metadata, $lang) {
+
+  }
+
+  /**
+   * Get content hub metadata cache from db
+   *
+   * @param  string  $lang Language code in ISO 639-1
+   *
+   * @return JsonSerializable Json string
+   */
+  public function getContentHubMetadataCache($lang = 'en') {
+  }
+
+  /**
+   * Get time of last content hub metadata check
+   *
+   * @param  string  $lang Language code iin ISO 639-1 format
+   *
+   * @return string|null Time in RFC7231 format
+   */
+  public function getContentHubMetadataChecked($lang = 'en') {
+
+  }
+
+  /**
+   * Set time of last content hub metadata check
+   *
+   * @param  int|null  $time Time in RFC7231 format
+   * @param  string  $lang Language code iin ISO 639-1 format
+   *
+   * @return bool True if successful
+   */
+  public function setContentHubMetadataChecked($time, $lang = 'en') {
+    
   }
 }
